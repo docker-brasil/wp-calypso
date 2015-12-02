@@ -19,7 +19,7 @@ You can read more about Calypso at [developer.wordpress.com/calypso](https://dev
     docker build -t $HUB_USER_NAME/calypso .
     docker images | grep calypso
     docker run -i -t --rm --name my-calypso \
-           -e CALYPSO_ENV=production 
+           -e CALYPSO_ENV=production \
            -p 3000:3000 $HUB_USER_NAME/calypso
 
     open http://192.168.59.103:30000
